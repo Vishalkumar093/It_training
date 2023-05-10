@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Butterfly practicec</title>
+    <style>
+        body{
+            background-image: url("image/road.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            width: 900px;
+            height: 416px;
+            scroll-behavior: calc(100% - 200px);
+            background-image: url("image/butter.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fly 1s steps(7) infinite;
+              direction: calc( to left -3086px)
+        }
+        @keyframes fly{
+            from{
+                background-position: 0px;
+            }
+            to{
+                background-position: -3086px;
+              
+            }
+        }
+        /* #action{
+            width: 80px;
+            height: 576px;
+            background-image: url("image/action.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: action 1s steps(5) infinite;
+        }
+        @keyframes action{
+            from{
+                background-position: 0px;
+            }
+            to{
+                background-position: -576px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div> </div>
+    <!-- <div id="action"></div> -->
+
+   
+</body>
+</html>

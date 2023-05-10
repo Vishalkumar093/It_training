@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 500px;
+            /* background-color: red; */
+            background-color: transparent;
+            box-shadow: 20px 50px #b13838,
+                           20px 30px green,
+                           20px 70px yellow;
+            border-radius: 100px;
+            animation: round 1s linear infinite;
+            margin: 100px auto;
+
+        }
+        @keyframes round{
+            0%{
+                transform: rotate(25deg);
+                background-color: rgb(255, 255, 255);
+            }
+            100%{
+                transform: rotate(25deg);
+                background-color: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div></div>
+</body>
+</html>

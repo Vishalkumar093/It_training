@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterfly example</title>
+    <style>
+        body{
+            background-image: url("image/road.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        #left_box{
+            width: 350px;
+            height: 500px;
+            float: right;
+        }
+        #tree{
+            background-image: url(image/tree1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #right_box{
+            width: 540px;
+            height: 416px;
+            float: left;
+        }
+        #flying{
+            width: 800px;
+            height: 100%;
+            background-image: url("image/butter.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+         animation: fly 1s steps(7) infinite; 
+        }
+        @keyframes fly{
+            from{
+                background-position: 0px;
+            }
+            to{
+                background-position: -3086px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+     <div id="left_box">
+         <img src="image/tree1.png">
+     </div>
+     <div id="right_box">
+     <div id="flying"> </div>
+     </div>
+</body>
+</html>
